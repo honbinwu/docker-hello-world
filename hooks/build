@@ -8,5 +8,5 @@ then
   docker build --build-arg PORT=$PORT -f $DOCKERFILE_PATH -t $IMAGE_NAME .
 else
   echo -e "building image using PORT: $PORT_STAGE"
-  docker build --build-arg PORT=&PORT_STAGE -f $DOCKERFIFL_PATH -t $IMAGE_NAME .
+  docker build --build-arg PORT=$PORT_STAGE -f $DOCKERFIFL_PATH -t $IMAGE_NAME .
 fi  
